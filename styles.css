@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root  {
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 16px;
+}
+
+h3 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 3rem;
+}
+
+img {
+    width: 75px;
+    margin-top: 60px;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.25rem;
+}
+
+button {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    outline: none;
+    border: none;
+    background-color: hsla(0, 0%, 100%, 0.75);
+    border-radius: 30px;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 15px 30px;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+
+.bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin-top: 10px;
+    border-radius: 7px;
+    width: 1125px;
+}
+
+.card {
+    flex-basis: 375px;
+}
+
+.card > * {
+    margin-left: 50px;
+    margin-right: 50px;   
+}
+
+@media (max-width: 757px) {
+    .container {
+        flex-direction: column;
+        width: 375px;
+    }
+}
+
+
+.sedans {
+    background-color: var(--bright-orange);
+}
+
+.sedans button {
+    color: var(--bright-orange);
+}
+
+.sedans button:hover {
+    color: white;
+    padding: 13px 28px;
+    background-color: var(--bright-orange);
+    border: white solid 2px;
+}
+
+.suvs {
+    background-color: var(--dark-cyan);
+}
+
+.suvs button{
+    color: var(--dark-cyan);
+}
+
+.suvs button:hover {
+    color: white;
+    padding: 13px 28px;
+    background-color: var(--dark-cyan);
+    border: white solid 2px;
+}
+
+.luxury {
+    background-color: var(--very-dark-cyan);
+}
+
+.luxury button {
+    color: var(--very-dark-cyan);
+}
+
+.luxury button:hover {
+    color: white;
+    padding: 13px 28px;
+    background-color: var(--very-dark-cyan);
+    border: white solid 2px;
+}
